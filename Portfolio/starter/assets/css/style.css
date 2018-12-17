@@ -1,0 +1,333 @@
+/* programmer: Maryam Keshavarz Date: 8/17/2018*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("../bckgrnd.png");
+    background-repeat: repeat;   
+}
+
+#gridContainer{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 0.25fr 50px 0.35fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+nav{
+    justify-content: center;
+    text-align: center;
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+nav a{
+    padding-right: 4%;
+    text-decoration-line: none;
+}
+
+/*-------------main section style--------------*/
+main{
+    display: block;
+    color: #333333;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+#mainContainer{
+    justify-content: left;
+    text-align: left;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-top: 7%;
+}
+
+
+h2{
+    font-family: 'Montserrat', sans-serif;/*headers should have this font that is not looklike a picture?????*/
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+p{
+    font-size: 20px;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.6;
+}
+
+strong { 
+    font-weight: bold;
+}
+
+ /*------------aside section style---------------*/
+ aside{
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 15px;
+}
+
+ .circle{
+    background-image: url("https://gt.bootcampcontent.com/uploads/-/system/user/avatar/790/avatar.png");/*can upload image from internet not asset folder*/
+    width: 200px;
+    height: 200px;
+    border: 3px solid #2c5fa8;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #000; 
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+/*------------Footer style---------------------*/
+footer{
+    grid-area: 4 / 1 / span 1 / span 1;
+    background-color: rgba(150, 150, 150, 0.60);
+    color: #FFFFFF;
+    padding: 15px;
+    padding-right: 40px;
+    margin-top: 9%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0.1fr 10px 1fr 10px 0.1fr;
+    grid-template-columns: 1fr;
+}
+
+/***********************************Footertext section*************************************/
+#footerText{
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#footerText h2{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#footerText img{ /*footer images are in asset folder*/
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    align-content: center;
+    height: 25px;
+}
+
+hr{
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 2px solid white;
+     grid-row:span 1;
+     grid-column: span 1;
+}
+
+/***********************************FooterImage section*************************************/
+#footerImage{
+    grid-area: 3 / 1 / span 1 / span 1;
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+#footerImage img{
+    grid-row: span 1;
+    grid-column: span 1;
+    width: 100%;
+    height: 180px;
+}
+
+
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-left: 15px solid rgb(8, 8, 8);
+    border-bottom: 7px solid transparent;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    margin: 0;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    right: 0;
+    background-color: rgba(175, 173, 173, 0.4);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    color: #0c0c0c;
+}
+
+
+
+.buttondiv{
+    display: flex; 
+    flex-flow: row;
+}
+
+h4{
+    padding-right: 10px;
+    padding-top: auto; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -41%);
+    text-align: center;
+
+}
+
+.container:hover .content {
+    bottom: 0;
+    height: 100%;
+  }
+
+#Copyright{
+    padding-top: 15px;
+
+}
+
+
+
+
+
+/* The heart of the matter */
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .testimonial-group > .row > .col-xs-4 {
+    display: inline-block;
+    float: none;
+  }
+  
+  /* Decorations */
+  /* .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+  .col-xs-4:nth-child(3n+1) { background: #c69; }
+  .col-xs-4:nth-child(3n+2) { background: #9c6; }
+  .col-xs-4:nth-child(3n+3) { background: #69c; } */
+
+/******************************************************************************************************/
+/************************************************DESKTOP******************************************************/
+/******************************************************************************************************/
+
+@media only screen and (min-width: 600px){
+    #gridContainer{
+        grid-template-rows: 0.25fr repeat(2, 1fr);
+        grid-template-columns: repeat(4 , 1fr);
+    }
+
+    nav{
+        grid-area: 1 / 1 / span 1 / span 4;
+        justify-content: left;
+        text-align: left; 
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+
+    nav a{
+        padding-right: 1%;
+    }
+
+/*************aside*************************/ 
+    aside{
+        grid-area: 1 / 4 / span 3 / span 1;
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .circle{
+        grid-area: 7 / 1 / span 2 / span 1;
+        z-index: 10;
+    }
+
+/**************main***********************/
+    main{
+        grid-area: 2 / 1 / span 1 / span 4;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    mainContainer{
+        justify-content: left;
+        text-align: left;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+/*------------Footer style---------------------*/
+    footer{
+        width: 100%; 
+        grid-area: 3 / 1 / span 1 / span 4;
+        padding: 0px;
+        padding-right: 40px;
+        margin-top: 0%;
+    }
+
+    #footerText{
+       margin-top: 0%;
+    }
+
+    #footerText img{ /*footer images are in asset folder*/
+        height: 30px;
+    }
+
+    #footerImage{
+        overflow-x: auto;
+        padding-left: 99%;
+        /* border: 2px solid black; */
+        margin-left: 0%;
+        /* overflow-x: scroll; */
+        overflow-y: hidden;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+    }
+
+    #footerImage img{
+        /* border: 2px solid red; */
+        min-width: 230px;
+        padding: 10%;
+        padding-bottom: 10%; 
+    }
+
+    /*
+    #both{
+        visibility: visible;
+        margin-left: 15px;
+    } */
+}
