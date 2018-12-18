@@ -33,7 +33,6 @@ const divClickList5 = document.getElementById('ptf_5');
 divClickList5.style.cursor = 'pointer';
 
 divClickList5.onclick = function() {
-    // location.href = "https://kmaryam27.github.io/Assignment3-activity30/30-activity/unsolved/";
     window.open('https://amazon--hubblepuff.herokuapp.com/');
 };
 
@@ -41,7 +40,6 @@ const divClickList6 = document.getElementById('ptf_6');
 divClickList6.style.cursor = 'pointer';
 
 divClickList6.onclick = function() {
-    // location.href = "https://kmaryam27.github.io/Assignment3-activity30/30-activity/unsolved/";
     window.open('https://space-shooting-game.herokuapp.com/');
 };
 
@@ -49,7 +47,6 @@ const divClickList7 = document.getElementById('ptf_7');
 divClickList7.style.cursor = 'pointer';
 
 divClickList7.onclick = function() {
-    // location.href = "https://kmaryam27.github.io/Assignment3-activity30/30-activity/unsolved/";
     window.open('https://todolist-mongo-socketio.herokuapp.com/');
 };
 
@@ -57,7 +54,6 @@ const divClickList8 = document.getElementById('ptf_8');
 divClickList8.style.cursor = 'pointer';
 
 divClickList8.onclick = function() {
-    // location.href = "https://kmaryam27.github.io/Assignment3-activity30/30-activity/unsolved/";
     window.open('https://kmaryam27.github.io/HarryPotterWordGuess/HarryPotterWordGuess/');
 };
 
@@ -65,6 +61,5 @@ const divClickList9 = document.getElementById('ptf_9');
 divClickList9.style.cursor = 'pointer';
 
 divClickList9.onclick = function() {
-    // location.href = "https://kmaryam27.github.io/Assignment3-activity30/30-activity/unsolved/";
     window.open('https://kmaryam27.github.io/HarryPotterMemoryGame/HarryPotterMemoryGame/');
 };
