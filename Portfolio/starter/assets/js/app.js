@@ -61,7 +61,7 @@ divClickList8.onclick = function() {
     window.open('https://kmaryam27.github.io/HarryPotterWordGuess/HarryPotterWordGuess/');
 };
 
-const divClickList9 = document.getElementById('ptf_8');
+const divClickList9 = document.getElementById('ptf_9');
 divClickList9.style.cursor = 'pointer';
 
 divClickList9.onclick = function() {
