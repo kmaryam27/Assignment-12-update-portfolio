@@ -33,7 +33,7 @@ const divClickList5 = document.getElementById('ptf_5');
 divClickList5.style.cursor = 'pointer';
 
 divClickList5.onclick = function() {
-    window.open('https://amazon--hubblepuff.herokuapp.com/');
+    window.open('https://gt-amazon-clone.herokuapp.com/');
 };
 
 const divClickList6 = document.getElementById('ptf_6');
